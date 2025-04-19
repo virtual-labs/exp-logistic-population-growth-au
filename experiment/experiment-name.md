@@ -1,1 +1,1 @@
-## Experiment name
+## Logistic Population Growth: Continuous and Discrete
