@@ -1,0 +1,49 @@
+
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. If the initial population is equal to carrying capacity (N = K), what will the population growth rate be?",
+      "answers": {
+        "a": "Less than zero",
+        "b": "Zero",
+        "c": "Greater than zero",
+        "d": "None of the above"
+      },
+ 
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },   
+
+
+    {
+      "question": "2. How does the logistic population growth model differ from Malthus model ?",
+      "answers": {
+        "a": "Carrying capacity",
+        "b": "Growth rate",
+        "c": "Both carrying capacity and growth rate.",
+        "d": "None of the above."
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+
+    
+    {
+      "question": "3. In logistic growth, the population growth is limited by?",
+      "answers": {
+        "a": "Carrying capacity",
+        "b": "Environmental factors.",
+        "c": "Both a & b.",
+        "d": "None of them"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}	 
+	 
+	 
+
