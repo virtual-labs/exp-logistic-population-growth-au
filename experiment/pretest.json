@@ -3,43 +3,43 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1.Who developed the logistic population growth model?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Lotka & Volterra",
+        "b": "Roy Anderson & Robert May",
+        "c": "Pierre Verhulst",
+        "d": "None of the above."
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. ",
+      "question": "2. How does the logistic population growth model differ from Malthus model ?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Carrying capacity",
+        "b": "Growth rate",
+        "c": "Both carrying capacity and growth rate.",
+        "d": "None of the above."
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
     
     {
-      "question": "3. ",
+      "question": "3. The population size changes over time in logistic growth depending on--",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Population density",
+        "b": "Birthrate",
+        "c": "Initial population size",
+        "d": "All of the above."
       },
      
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
