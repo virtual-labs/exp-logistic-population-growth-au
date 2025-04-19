@@ -1,39 +1,49 @@
+
 {
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1.Who developed the logistic population growth model?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Lotka & Volterra",
+        "b": "Roy Anderson & Robert May",
+        "c": "Pierre Verhulst",
+        "d": "None of the above."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+ 
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },   
+
+
+    {
+      "question": "2. How does the logistic population growth model differ from Malthus model ?",
+      "answers": {
+        "a": "Carrying capacity",
+        "b": "Growth rate",
+        "c": "Both carrying capacity and growth rate.",
+        "d": "None of the above."
       },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
+
+    
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3. The population size changes over time in logistic growth depending on--",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Population density",
+        "b": "Birthrate",
+        "c": "Initial population size",
+        "d": "All of the above."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
+     
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
-}
+}	 
+	 
+	 
+
