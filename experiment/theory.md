@@ -29,6 +29,8 @@ P(t)=P0ertP(t) = P_0 e^{rt}P(t)=P0ert
 
 where P0P_0P0 is the initial population.
 
+&nbsp;
+
 #### Logistic Growth Model (Limited Resources)
 As the population grows and resources become limited, the growth rate decreases:
 
@@ -42,6 +44,8 @@ K: Carrying capacity
 
 This logistic model accounts for the slowing of growth as population size NNN approaches KKK.
 
+&nbsp;
+
 #### Graphical Representation
 
 Exponential Growth (Magenta Curve): Grows without bound.
@@ -50,9 +54,13 @@ Logistic Growth (Orange Curve): Grows initially like exponential but slows down 
 
 As N≪KN \ll KN≪K, the logistic and exponential models behave similarly. As N→KN \rightarrow KN→K, the growth rate approaches zero.
 
+&nbsp;
+
 #### Logistic Equation Dynamics
 
 The logistic equation resembles a parabolic function and can exhibit complex dynamics, especially in discrete form. It has been historically important in understanding biological population growth (Verhulst, 1845). Kingsland (1980s) discussed its applications, successes, and failures in ecology.
+
+&nbsp;
 
 ##### 1. Discrete Logistic Growth
 
@@ -76,6 +84,8 @@ K=R−1aK = \frac{R - 1}{a}K=aR−1
 R: Intrinsic rate of increase
 
 a: Susceptibility to crowding
+
+&nbsp;
 
 ##### 2. Continuous Logistic Growth
 
