@@ -1,169 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-  
-  <!--It is a good practice to declare the encoding even for an 
-  English Web site. One function of this is to tag is to "reset"
-  the user's browser back to Latin-1 and ensure proper font 
-  settings. The Unicode "utf-8" encoding also ensures that any 
-  special characters inserted such as "Smart quotes", currency 
-  symbols, em-dashes and so forth will be properly displayed in
-  most browsers.-->
-  <meta http-equiv="Content-Type" content="text/html; 
-  charset=utf-8" >
-
-
-  <!-- The following meta element gives the appearance of using 
-  Internet Explorer (IE) but actually renders the page in google 
-  chrome thus rescuing the older IE versions and providing the 
-  speed and standards compliance, and security of Chrome 
-  http://tech18.com/google-chrome-frame-rescue-older-ie.html -->
-  <meta http-equiv="X-UA-Compatible" 
-  content="IE=edge,chrome=1"/>
-
-
-  <!-- The default title of the lab. -->
-  <title class="custom" id="page-title">Virtual Labs</title>
-  
-
-  <!-- Following meta tags store the information about the 
-  author and any other relevant information about the  code -->
-  <meta name="author" content="" class="custom">
-  <meta name="description" content="" class="custom">
-
-
-  <!-- Place the relative address of the favicon 
-  ("images/logo.jpeg" here). All major browsers support the link
-  rel="shortcut icon"  tag to associate a small icon with the 
-  page -->
-  <link rel="shortcut icon" href="./images/favicon.png" 
-  class="custom">
-
-
-  <!-- These are the stylesheets used for the lab. Please don't
-  edit them; If you do, you will lose the edits in subsequent 
-  releases of this User Interface. -->
-  <link rel="stylesheet" href="./css/default.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
-
-
-  <!-- Instead add your custom styles to override the defaults 
-  coming from the above style sheets. -->
-  
-  <!-- <link rel="stylesheet" href="./css/override.css"/> -->
-
-  <!-- ***************************************************** -->
-
-  <!-- All JavaScript at the bottom, except for Modernizr which
-  enables HTML5 elements & feature detects -->
-  <script type="text/javascript" src="../../lib/js/modernizr-1.5.min.js">
-  </script>
-
-  <script src="../../lib/js/jquery-1.7.1.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() 
-    {		
-      //the function is called once the document loads     
-
-      $('#hidden-content').load('default.html #experiment', 
-              function(response,status,xhr)
-      {
-        //loads the default.html #lab section into the
-        //#hidden-content
-		
-        $('#container').load('content.html #experiment', 
-              function(response,status,xhr)
-        {
-          //loads the content.html #lab section into the
-	  //#container
-
-          homePage=$("div#experiment-header-heading a").html();
-          
-	  thisPage=$("article#experiment-article header#experiment-article-heading").html();
-        
-	  breadcrumb="<font color='white'>" + "<a href='./index.html'>Home<a/> \> <a href='./index.html'>" + homePage + "</a> \> <a href='./index.html'>" + thisPage + "</a>"+ "</font>";
-        
-	  $("article#experiment-article div#experiment-article-breadcrumb").html(breadcrumb);
-				
-	  $("#container .default").each(function() 
-	  {
-            // Extracts all elements with class = "default"
-            // and top down
-            
-	    sectionId = $(this).attr('id');
-            sectionContent = $("#hidden-content #" + 
-                  sectionId).html();
-            $("#container #" + sectionId).html(sectionContent);
-	  });
-			
-	  $("#container #experiment-article-sections > section").each(function() 
-	  {
-	    // loads all the content in the respective
-	    // sections with the corresponding section headings 
-
-            sectionId = $(this).attr('id');
-	    headerId = $("#" + sectionId + "-heading").html();
-	    iconId = $("#" + sectionId + "-icon").html();
-
-	    $("#container #experiment-article-navigation ul").
-	      append("<li> <a href=\'#\' id=\'"+ sectionId + 
-              "-menu\'>" + iconId +"<br />" +
-              headerId + "</a></li>");
-	  });
-	
-	  /*			
-          $("#experiment-article-sections").after(
-            "<div id='experiment-article-sections-view'> </div>");
-	  $("#experiment-article-sections-view").html($(
-            "#experiment-article-sections section:first").html()); */
-    
-	  $("#experiment-article-sections section").hide();
-	  //hide all the experiment sections
-
-	  $("#experiment-article-sections section:first").show();
-	  //show only the first experiment section when
-	  //the experiment page loads
-	  
-	  $("#experiment-article-navigation ul > li a").live('click',
-            function()            
-          {	
-            //enables the navigation
-
-            menuId = $(this).attr('id'); 
-            // this points to the current element
-	    
-	    sectionId = menuId.replace(/-menu/i, "");
-	    /*
-	    $("#experiment-article-sections-view").html($(
-            "#experiment-article-sections #" + 
-            sectionId).html());
-	    */
-            
-	    $("#experiment-article-sections section").hide();
-	    $("#experiment-article-sections #" + sectionId).show();
-        });
-      });		
-    });
-  });
-
-  </script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Logistic Population Growth — Continuous &amp; Discrete — Simulation</title>
+<link rel="stylesheet" href="./css/main.css">
 </head>
-
-<body> 
-  <div id="container"></div>
-  <div id="hidden-content"></div>
-	
-  <!-- Javascript at the bottom for fast page loading -->
-
-  <!--<script type="text/javascript" src="../js/MathJax/MathJax.js"> -->
-  <!--  </script> -->
-
-  <!-- ******** ADD/OVERRIDE JAVASCRIPT FILES HERE ********* -->
-
-  <!-- ***************************************************** -->
-  
+<body>
+<div class="card" id="simbox">
+<div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="images\logo.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Logistic Population Growth — Continuous &amp; Discrete</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+<div class="sim">
+<div class="controls">
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Mode</label>
+<select class="dropBox" id="mode" onchange="run()">
+  <option value="cont">Continuous time — dN/dt = rN(1−(N/K)^θ)</option>
+  <option value="dis">Discrete time — Nₜ₊₁ = Nₜ + rNₜ(1−(Nₜ/K)^θ)</option>
+  <option value="bif">Bifurcation diagram (vary r)</option>
+  <option value="den">Effect of population density</option>
+</select>
+<div class="field"><label>Initial population N₀ <span class="val" id="v_n0">10</span></label><input type="range" id="n0" min="1" max="200" value="10" oninput="sync()"></div>
+<div class="field"><label>Growth rate r <span class="val" id="v_r">0.6</span></label><input type="range" id="r" min="0.05" max="3" step="0.05" value="0.6" oninput="sync()"><div class="hint">Discrete model gets cycles/chaos as r rises above ~2.</div></div>
+<div class="field"><label>Carrying capacity K <span class="val" id="v_K">100</span></label><input type="range" id="K" min="20" max="300" step="10" value="100" oninput="sync()"></div>
+<div class="field"><label>Shape θ <span class="val" id="v_th">1</span></label><input type="range" id="th" min="0.5" max="3" step="0.1" value="1" oninput="sync()"></div>
+<div class="field"><label>Number of steps <span class="val" id="v_steps">40</span></label><input type="range" id="steps" min="10" max="200" step="5" value="40" oninput="sync()"></div>
+<div class="btnrow">
+  <button class="btn btn-primary" onclick="run()">▶ Run</button>
+  <button class="btn btn-ghost" onclick="play()" id="playBtn">Play ▶</button>
+  <button class="btn btn-ghost" onclick="step()">Step ⏭</button>
+  <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+</div>
+<div class="dl-label">Download</div>
+<div class="btnrow">
+  <button class="btn btn-accent" onclick="downloadPNG('logistic-growth.png')">⤓ PNG</button>
+  <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+</div>
+</div>
+<div class="plotwrap">
+<canvas class="field" id="field" width="720" height="240"></canvas>
+<div class="counts" id="counts"></div>
+<div class="plot-title" id="plotTitle">Logistic growth over time</div>
+<canvas class="chart" id="chart" width="720" height="400"></canvas>
+<div class="legend" id="legend"></div>
+<div class="readout">Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></div>
+</div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="./js/main.js"></script>
 </body>
 </html>
