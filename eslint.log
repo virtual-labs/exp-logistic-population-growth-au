@@ -1,0 +1,11 @@
+
+/home/runner/work/exp-logistic-population-growth-au/exp-logistic-population-growth-au/experiment/simulation/js/main.js
+  29:10  warning  'downloadPNG' is defined but never used  no-unused-vars
+  33:10  warning  'toggleFS' is defined but never used     no-unused-vars
+  66:10  warning  'play' is defined but never used         no-unused-vars
+  68:10  warning  'step' is defined but never used         no-unused-vars
+  71:10  warning  'resetSim' is defined but never used     no-unused-vars
+  72:10  warning  'downloadCSV' is defined but never used  no-unused-vars
+
+✖ 6 problems (0 errors, 6 warnings)
+
