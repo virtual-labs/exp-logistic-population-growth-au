@@ -1,121 +1,103 @@
 ### Procedure
 
-The screen shot of the simulator is as shown below.
-
-<img src="images/11.png" title="" />
-
-&nbsp;
-
+1. The simulator generates a logistic population growth curve corresponding to the selected model and parameter values. Users can observe the temporal changes in population size, examine how the population approaches the carrying capacity, and compare the behaviour of continuous and discrete logistic growth under different simulation conditions.
  
-
-The simulator consists of three regions: the simulator's viewable window, the variables menu and the simulation control menu.
-
-&nbsp;
- 
-#### The Variables Menu:
-
-The variables menu section consists of two sub tabs for the simulation of Continuous and Discrete growth model.
-
-<img src="images/12.png" title="" />
-
-&nbsp;
-
- 
-
-
-
- 
-
-Both of the Continuous and Discrete growth models have its own parameters.
-
- 
-
-The variable menu for the Continuous Growth model is as shown below.
- 
-
-<img src="images/13.png" title="" />
-
 &nbsp;
 
 
-
+2. The simulator enables users to investigate population growth under both continuous and discrete logistic growth models. Users can configure the model parameters, execute the simulation, visualize changes in population size over time, and compare the effects of different growth conditions on population dynamics.
  
-
- 
-The values entered in the 'Variables' Menu of both the models are default values. User can change the values for the parameters according to the data to be tested. The parameters model includes: No. of individuals (N), Maximum rate of growth (Rm), Carrying Capacity (K), Spatial distribution of individuals, No. of steps and initial pupation density.
-
-&nbsp;
-
- 
-#### Simulation control menu:
-
-
-<img src="images/14.png" title="" />
-
-&nbsp;
-
- 
-
-These set of buttons are used for controlling the simulation. This buttons include: Step Run, Run Iteration, Play/Pause, Reset as well as button for plotting the graph. ‘Step Run' button is meant for manually running the simulator, step by step.  ‘Run Iterations', as the literal word meaning runs the simulator slowly each step by step with the same previously entered values repeatedly till the T time, can also be paused in between to get the values at the corresponding, desired time. 'Play/pause' button as in all cases is for pausing (and continuing) the simulator at any step needed while performing Iterations (slowly, repeatedly calculating the population possible in each step). The 'Reset' button resets the simulator to the default values.
-
-&nbsp;
-
- 
-#### Viewable window (Result display window):
- 
-
-The simulated values for the parameters are interspersed as graphs in this window.
-
-
-<img src="images/15.png" title="" />
-
-&nbsp;
-
- 
-#### Step by Step explanation:
- 
-
-##### Step 1:
-Open the simulator and enter the values for the parameters in the variable window. By default, the selected option is Continuous growth model. Click on the drop down menu to select the graph. Continuous Time Model is the default graph option. User can change the option according to the graph to be plotted.
-
- 
-
-<img src="images/16.png" title="" />
-
 &nbsp;
 
 
+3. The simulator consists of a parameter panel on the left and a visualization panel on the right displaying the population animation and the corresponding growth curve.
 
+<p align="center">
+<img src="images/p1.png" title="" />
+</p>
  
-
-##### Step 2:
-Click on the ‘Run Iteration’ button to simulate the model.
-
-
-<img src="images/17.png" title="" />
-
 &nbsp;
+
+4. Select the simulation mode from the drop-down menu. Choose either the Continuous logistic growth model or the Discrete logistic growth model, depending on the type of population dynamics to be investigated.
+
+<p align="center">
+<img src="images/p1.png" title="" />
+</p>
  
+&nbsp;
 
-
-
+5. Specify the initial population size (N₀) using the corresponding slider. This parameter defines the number of individuals present at the beginning of the simulation.
  
-
-##### Step 3:
-Click on the ‘Plot Graph’ button to plot the results. The graph will be shown in the Result display window.
+&nbsp;
 
 
-<img src="images/18.png" title="" />
+6. Adjust the intrinsic growth rate (r) using the Growth rate slider. The growth rate determines the rate at which the population increases under ideal environmental conditions. For the discrete model, increasing the growth rate beyond a threshold may produce oscillatory or chaotic population dynamics.
+ 
+&nbsp;
+
+7. Set the carrying capacity (K) using the corresponding slider. The carrying capacity represents the maximum population size that the environment can sustainably support.
+ 
+&nbsp;
+
+8. Specify the shape parameter (θ) using the Shape slider. This parameter influences the form of density-dependent regulation and modifies the approach of the population towards the carrying capacity.
+ 
+&nbsp;
+
+9. Set the total number of simulation steps using the Number of steps slider. This parameter determines the duration of the simulation and the total number of computational iterations.
+ 
+&nbsp;
+
+10. After configuring all model parameters, click the Run button to execute the simulation. The simulator computes the population growth trajectory using the selected model and displays the corresponding graphical output.
+ 
+&nbsp;
+
+11. Alternatively, click the Play button to visualize the simulation continuously or click the Step button to advance the simulation one iteration at a time, allowing detailed observation of the population changes during each computational step.
+
+<p align="center">
+<img src="images/p1.png" title="" />
+</p>
+ 
+&nbsp;
+
+12. Observe the animation panel displayed above the graph. The animation provides a visual representation of the simulated population, illustrating changes in the number of individuals throughout the simulation.
+ 
+&nbsp;
+
+13. Examine the population statistics displayed above the graph, including the Population, simulation time (t), and carrying capacity (K). These values are updated as the simulation progresses and summarize the current state of the population.
+ 
+&nbsp;
+
+14. Observe the Continuous Logistic Growth graph displayed below the animation panel. The graph illustrates the variation in population size (N) with respect to time, enabling visualization of the logistic growth pattern. Interpret the X-axis (Time) to determine the progression of the simulation and the Y-axis (Population, N) to examine changes in population size throughout the simulation period.
+ 
+&nbsp;
+
+15. Observe the shape of the growth curve and compare the initial phase of rapid population increase with the later phase, where the growth rate gradually decreases as the population approaches the carrying capacity.
+ 
+&nbsp;
+
+16. Identify the point at which the population stabilizes. This indicates that the population has reached an equilibrium state where population growth is balanced by density-dependent environmental limitations.
+ 
+&nbsp;
+
+17. Move the cursor over the graph, if required, to view the corresponding coordinate values displayed beneath the graph. These values provide the population size at a specific simulation time.
+ 
+&nbsp;
+
+18. Modify one or more model parameters, such as the initial population size (N₀), intrinsic growth rate (r), carrying capacity (K), shape parameter (θ), or the number of simulation steps, and execute the simulation again to examine their influence on the population growth trajectory.
+ 
+&nbsp;
+
+19. If required, click the Reset button to restore the default parameter values before performing another simulation.
+ 
+&nbsp;
+
+20. Download the simulation results by clicking the PNG button to save the graphical output as an image or the CSV button to export the numerical simulation data for further analysis.
+ 
+&nbsp;
+
+21.	Repeat the above procedure using different combinations of growth rates, carrying capacities, initial population sizes, and simulation modes to investigate their influence on logistic population growth and compare the characteristics of continuous and discrete population models.
 
 &nbsp;
 
 
 
-
- 
-
-Once you complete the procedures, press the reset button of the simulation control window, to reset all parameters to its initial/default values.
-
- 
-
- 
